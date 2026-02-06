@@ -1,15 +1,16 @@
-import { ScrollTrigger, SplitText } from "gsap/all"
+import { ScrollTrigger, SplitText } from "gsap/all";
 import gsap from "gsap";
+import Navbar from "./components/Navbar.tsx";
 
 // Registering gsap plugins for the entire application
-gsap.registerPlugin(ScrollTrigger, SplitText)
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
-    return (
-        <div>
-            <h1 className="text-3xl text-indigo-300">Hello, World!</h1>
-        </div>
-    );
+  return (
+    <main>
+      <Navbar />
+    </main>
+  );
 };
 
 export default App;
